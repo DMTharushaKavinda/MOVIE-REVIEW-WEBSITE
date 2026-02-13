@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Series - CineVerse</title>
+    <meta name="description" content="Browse our comprehensive collection of TV series reviews and ratings.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-black/30 backdrop-blur-xl border-b border-white/10">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                        <span class="text-2xl">🎬</span>
+                    </div>
+                    <span
+                        class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">CineVerse</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="movies.html" class="nav-link">Movies</a>
+                    <a href="tv-series.html" class="nav-link active">TV Series</a>
+                    <a href="reviews.html" class="nav-link">Reviews</a>
+                    <a href="about.html" class="nav-link">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-12 px-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-black mb-6">
+                Explore <span class="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">TV
+                    Series</span>
+            </h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+                Dive into comprehensive reviews and ratings for the most captivating TV series
+            </p>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-3 mb-8">
+                <button class="filter-btn active" data-filter="all">All Series</button>
+                <button class="filter-btn" data-filter="fantasy">Fantasy</button>
+                <button class="filter-btn" data-filter="sci-fi">Sci-Fi</button>
+                <button class="filter-btn" data-filter="drama">Drama</button>
+                <button class="filter-btn" data-filter="thriller">Thriller</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- TV Series Grid -->
+    <section class="py-12 px-6">
+        <div class="container mx-auto">
+            <div class="trending-grid" id="seriesGrid">
+                <!-- Game of Thrones -->
+                <div class="movie-card" data-category="fantasy drama adventure">
+                    <div class="movie-poster">
+                        <img src="got.jpeg" alt="Game of Thrones" class="movie-img">
+                        <div class="movie-overlay">
+                            <a href="review-got.html" class="play-button">▶</a>
+                        </div>
+                        <div class="rating-badge">9.3</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Game of Thrones</h3>
+                        <p class="movie-meta">2011-2019 • Fantasy, Drama</p>
+                        <div class="flex items-center justify-between mt-2">
+                            <div class="stars">★★★★★</div>
+                            <span class="text-sm text-gray-400">4.2K reviews</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mt-2">Epic fantasy that redefined television</p>
+                    </div>
+                </div>
+
+                <!-- House of the Dragon -->
+                <div class="movie-card" data-category="fantasy drama">
+                    <div class="movie-poster">
+                        <img src="hod.jpg" alt="House of the Dragon" class="movie-img">
+                        <div class="movie-overlay">
+                            <a href="review-hotd.html" class="play-button">▶</a>
+                        </div>
+                        <div class="rating-badge">8.6</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">House of the Dragon</h3>
+                        <p class="movie-meta">2022-Present • Fantasy, Drama</p>
+                        <div class="flex items-center justify-between mt-2">
+                            <div class="stars">★★★★☆</div>
+                            <span class="text-sm text-gray-400">1.8K reviews</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mt-2">The Targaryen civil war begins</p>
+                    </div>
+                </div>
+
+                <!-- Dark -->
+                <div class="movie-card" data-category="sci-fi thriller drama">
+                    <div class="movie-poster">
+                        <img src="dark.jpg" alt="Dark" class="movie-img">
+                        <div class="movie-overlay">
+                            <a href="review-dark.html" class="play-button">▶</a>
+                        </div>
+                        <div class="rating-badge">8.8</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Dark</h3>
+                        <p class="movie-meta">2017-2020 • Sci-Fi, Thriller</p>
+                        <div class="flex items-center justify-between mt-2">
+                            <div class="stars">★★★★★</div>
+                            <span class="text-sm text-gray-400">1.6K reviews</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mt-2">Mind-bending time travel masterpiece</p>
+                    </div>
+                </div>
+
+                <!-- The 100 -->
+                <div class="movie-card" data-category="sci-fi drama">
+                    <div class="movie-poster">
+                        <img src="the 100.jpg" alt="The 100" class="movie-img">
+                        <div class="movie-overlay">
+                            <a href="review-the100.html" class="play-button">▶</a>
+                        </div>
+                        <div class="rating-badge">7.6</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">The 100</h3>
+                        <p class="movie-meta">2014-2020 • Sci-Fi, Drama</p>
+                        <div class="flex items-center justify-between mt-2">
+                            <div class="stars">★★★★☆</div>
+                            <span class="text-sm text-gray-400">1.4K reviews</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mt-2">Post-apocalyptic survival drama</p>
+                    </div>
+                </div>
+
+                <!-- A Knight of the Seven Kingdoms -->
+                <div class="movie-card" data-category="fantasy adventure drama">
+                    <div class="movie-poster">
+                        <img src="knight-of-the-7-kingdoms.jpg.jpeg" alt="A Knight of the Seven Kingdoms"
+                            class="movie-img">
+                        <div class="movie-overlay">
+                            <a href="review-knight.html" class="play-button">▶</a>
+                        </div>
+                        <div class="rating-badge">8.2</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">A Knight of the Seven Kingdoms</h3>
+                        <p class="movie-meta">2025 • Fantasy, Adventure</p>
+                        <div class="flex items-center justify-between mt-2">
+                            <div class="stars">★★★★☆</div>
+                            <span class="text-sm text-gray-400">950 reviews</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mt-2">A new tale from Westeros</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/40 border-t border-white/10 py-12 px-6 mt-12">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                            <span class="text-2xl">🎬</span>
+                        </div>
+                        <span class="text-xl font-bold">CineVerse</span>
+                    </div>
+                    <p class="text-gray-400">Your ultimate destination for movie and TV series reviews.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="movies.html" class="hover:text-purple-400 transition-colors">Movies</a></li>
+                        <li><a href="tv-series.html" class="hover:text-purple-400 transition-colors">TV Series</a></li>
+                        <li><a href="reviews.html" class="hover:text-purple-400 transition-colors">Reviews</a></li>
+                        <li><a href="about.html" class="hover:text-purple-400 transition-colors">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Categories</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">Action</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">Drama</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">Sci-Fi</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">Fantasy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-icon">📘</a>
+                        <a href="#" class="social-icon">🐦</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">▶️</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 CineVerse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const seriesCards = document.querySelectorAll('.movie-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const filter = this.dataset.filter;
+
+                seriesCards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category.includes(filter)) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+
+    <style>
+        .filter-btn {
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 2rem;
+            color: #d1d5db;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover {
+            background: rgba(168, 85, 247, 0.2);
+            border-color: rgba(168, 85, 247, 0.5);
+            color: #a855f7;
+        }
+
+        .filter-btn.active {
+            background: linear-gradient(135deg, #a855f7, #ec4899);
+            border-color: transparent;
+            color: white;
+        }
+
+        .movie-card {
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+    </style>
+</body>
+
+</html>

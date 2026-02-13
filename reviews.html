@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Reviews - CineVerse</title>
+    <meta name="description" content="Browse all movie and TV series reviews in one place.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-black/30 backdrop-blur-xl border-b border-white/10">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                        <span class="text-2xl">🎬</span>
+                    </div>
+                    <span
+                        class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">CineVerse</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="movies.html" class="nav-link">Movies</a>
+                    <a href="tv-series.html" class="nav-link">TV Series</a>
+                    <a href="reviews.html" class="nav-link active">Reviews</a>
+                    <a href="about.html" class="nav-link">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-12 px-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-black mb-6">
+                All <span
+                    class="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Reviews</span>
+            </h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+                Explore our complete collection of in-depth reviews for movies and TV series
+            </p>
+        </div>
+    </section>
+
+    <!-- Reviews List -->
+    <section class="py-12 px-6">
+        <div class="container mx-auto max-w-5xl">
+            <!-- Review Item -->
+            <a href="review-got.html" class="block mb-6">
+                <div
+                    class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-purple-500/30 transition-all duration-300">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="w-full md:w-48 h-64 rounded-xl flex-shrink-0 overflow-hidden">
+                            <img src="got.jpeg" alt="Game of Thrones" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="featured-badge">TV Series</span>
+                                <span class="text-gray-400">2011-2019</span>
+                            </div>
+                            <h2 class="text-3xl font-bold mb-3">Game of Thrones</h2>
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="rating-badge">9.3</div>
+                                <div class="stars">★★★★★</div>
+                                <span class="text-gray-400">4,200 reviews</span>
+                            </div>
+                            <p class="text-gray-300 mb-4">
+                                Epic fantasy drama that redefined television storytelling with complex characters and
+                                shocking plot twists. A masterpiece of modern television.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-purple-500/20 border border-purple-500/30 rounded-full text-sm">Fantasy</span>
+                                <span
+                                    class="px-3 py-1 bg-purple-500/20 border border-purple-500/30 rounded-full text-sm">Drama</span>
+                                <span
+                                    class="px-3 py-1 bg-purple-500/20 border border-purple-500/30 rounded-full text-sm">Adventure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Review Item -->
+            <a href="review-dune.html" class="block mb-6">
+                <div
+                    class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-purple-500/30 transition-all duration-300">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="w-full md:w-48 h-64 rounded-xl flex-shrink-0 overflow-hidden">
+                            <img src="dune.jpg" alt="Dune" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="featured-badge">Movie</span>
+                                <span class="text-gray-400">2021</span>
+                            </div>
+                            <h2 class="text-3xl font-bold mb-3">Dune</h2>
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="rating-badge">8.5</div>
+                                <div class="stars">★★★★☆</div>
+                                <span class="text-gray-400">2,100 reviews</span>
+                            </div>
+                            <p class="text-gray-300 mb-4">
+                                Denis Villeneuve's stunning sci-fi epic with breathtaking visuals and Hans Zimmer's
+                                powerful score. A faithful adaptation of Frank Herbert's masterpiece.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-purple-500/20 border border-purple-500/30 rounded-full text-sm">Sci-Fi</span>
+                                <span
+                                    class="px-3 py-1 bg-purple-500/20 border border-purple-500/30 rounded-full text-sm">Adventure</span>
+                                <span
+                                    class="px-3 py-1 bg-purple-500/20 border border-purple-500/30 rounded-full text-sm">Drama</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Review Item -->
+            <a href="review-dark.html" class="block mb-6">
+                <div
+                    class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-purple-500/30 transition-all duration-300">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="w-full md:w-48 h-64 rounded-xl flex-shrink-0 overflow-hidden">
+                            <img src="dark.jpg" alt="Dark" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="featured-badge">TV Series</span>
+                                <span class="text-gray-400">2017-2020</span>
+                            </div>
+                            <h2 class="text-3xl font-bold mb-3">Dark</h2>
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="rating-badge">8.8</div>
+                                <div class="stars">★★★★★</div>
+                                <span class="text-gray-400">1,600 reviews</span>
+                            </div>
+                            <p class="text-gray-300 mb-4">
+                                Mind-bending time travel thriller that keeps you guessing. A masterclass in complex
+                                storytelling with a satisfying conclusion.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-purple-500/20 border border-purple-500/30 rounded-full text-sm">Sci-Fi</span>
+                                <span
+                                    class="px-3 py-1 bg-purple-500/20 border border-purple-500/30 rounded-full text-sm">Thriller</span>
+                                <span
+                                    class="px-3 py-1 bg-purple-500/20 border border-purple-500/30 rounded-full text-sm">Mystery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Review Item -->
+            <a href="review-spiderman.html" class="block mb-6">
+                <div
+                    class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-purple-500/30 transition-all duration-300">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="w-full md:w-48 h-64 rounded-xl flex-shrink-0 overflow-hidden">
+                            <img src="spider man no way home.jpg" alt="Spider-Man No Way Home"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="featured-badge">Movie</span>
+                                <span class="text-gray-400">2021</span>
+                            </div>
+                            <h2 class="text-3xl font-bold mb-3">Spider-Man: No Way Home</h2>
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="rating-badge">8.7</div>
+                                <div class="stars">★★★★★</div>
+                                <span class="text-gray-400">3,200 reviews</span>
+                            </div>
+                            <p class="text-gray-300 mb-4">
+                                Multiverse madness at its finest. A love letter to Spider-Man fans with emotional
+                                storytelling and perfect fan service.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-purple-500/20 border border-purple-500/30 rounded-full text-sm">Action</span>
+                                <span
+                                    class="px-3 py-1 bg-purple-500/20 border border-purple-500/30 rounded-full text-sm">Adventure</span>
+                                <span
+                                    class="px-3 py-1 bg-purple-500/20 border border-purple-500/30 rounded-full text-sm">Sci-Fi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Review Item -->
+            <a href="review-hotd.html" class="block mb-6">
+                <div
+                    class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-purple-500/30 transition-all duration-300">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="w-full md:w-48 h-64 rounded-xl flex-shrink-0 overflow-hidden">
+                            <img src="hod.jpg" alt="House of the Dragon" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="featured-badge">TV Series</span>
+                                <span class="text-gray-400">2022-Present</span>
+                            </div>
+                            <h2 class="text-3xl font-bold mb-3">House of the Dragon</h2>
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="rating-badge">8.6</div>
+                                <div class="stars">★★★★☆</div>
+                                <span class="text-gray-400">1,800 reviews</span>
+                            </div>
+                            <p class="text-gray-300 mb-4">
+                                The Targaryen civil war begins. A worthy successor to Game of Thrones with impressive
+                                dragon sequences and political intrigue.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-purple-500/20 border border-purple-500/30 rounded-full text-sm">Fantasy</span>
+                                <span
+                                    class="px-3 py-1 bg-purple-500/20 border border-purple-500/30 rounded-full text-sm">Drama</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/40 border-t border-white/10 py-12 px-6 mt-12">
+        <div class="container mx-auto text-center text-gray-400">
+            <p>&copy; 2026 CineVerse. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

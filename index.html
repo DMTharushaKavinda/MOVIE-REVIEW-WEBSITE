@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineVerse - Premium Movie & TV Series Reviews</title>
+    <meta name="description"
+        content="Discover the latest movie and TV series reviews, ratings, and community discussions. Your ultimate entertainment guide.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-black/30 backdrop-blur-xl border-b border-white/10">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                        <span class="text-2xl">🎬</span>
+                    </div>
+                    <span
+                        class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">CineVerse</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="movies.html" class="nav-link">Movies</a>
+                    <a href="tv-series.html" class="nav-link">TV Series</a>
+                    <a href="reviews.html" class="nav-link">Reviews</a>
+                    <a href="about.html" class="nav-link">About</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="search-btn">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </button>
+                    <button class="menu-btn md:hidden">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section pt-32 pb-20 px-6">
+        <div class="container mx-auto">
+            <div class="text-center max-w-4xl mx-auto mb-16">
+                <h1 class="hero-title text-6xl md:text-8xl font-black mb-6">
+                    Discover Your Next
+                    <span
+                        class="bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 bg-clip-text text-transparent">
+                        Favorite
+                    </span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8">
+                    Explore comprehensive reviews, ratings, and community insights for the latest movies and TV series
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="movies.html" class="cta-button primary">
+                        Browse Movies
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                    </a>
+                    <a href="tv-series.html" class="cta-button secondary">
+                        Explore TV Series
+                    </a>
+                </div>
+            </div>
+
+            <!-- Featured Content -->
+            <div class="featured-grid">
+                <div class="featured-card" data-movie="game-of-thrones">
+                    <div class="featured-image">
+                        <img src="got.jpeg" alt="Game of Thrones" class="featured-img">
+                        <div class="featured-overlay">
+                            <span class="featured-badge">TV Series</span>
+                            <div class="rating-badge">9.3</div>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3 class="text-2xl font-bold mb-2">Game of Thrones</h3>
+                        <p class="text-gray-400 mb-4">Epic fantasy drama that redefined television storytelling</p>
+                        <a href="review-got.html" class="read-more">Read Review →</a>
+                    </div>
+                </div>
+
+                <div class="featured-card" data-movie="dune">
+                    <div class="featured-image">
+                        <img src="dune.jpg" alt="Dune" class="featured-img">
+                        <div class="featured-overlay">
+                            <span class="featured-badge">Movie</span>
+                            <div class="rating-badge">8.5</div>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3 class="text-2xl font-bold mb-2">Dune</h3>
+                        <p class="text-gray-400 mb-4">A stunning sci-fi epic with breathtaking visuals</p>
+                        <a href="review-dune.html" class="read-more">Read Review →</a>
+                    </div>
+                </div>
+
+                <div class="featured-card" data-movie="dark">
+                    <div class="featured-image">
+                        <img src="dark.jpg" alt="Dark" class="featured-img">
+                        <div class="featured-overlay">
+                            <span class="featured-badge">TV Series</span>
+                            <div class="rating-badge">8.8</div>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3 class="text-2xl font-bold mb-2">Dark</h3>
+                        <p class="text-gray-400 mb-4">Mind-bending time travel thriller that keeps you guessing</p>
+                        <a href="review-dark.html" class="read-more">Read Review →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Section -->
+    <section class="py-20 px-6 bg-black/20">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between mb-12">
+                <h2 class="section-title">Trending Now</h2>
+                <a href="reviews.html" class="text-purple-400 hover:text-purple-300 transition-colors">View All →</a>
+            </div>
+
+            <div class="trending-grid">
+                <div class="movie-card" data-movie="avengers">
+                    <div class="movie-poster">
+                        <img src="avengers endgame.jpg" alt="Avengers Endgame" class="movie-img">
+                        <div class="movie-overlay">
+                            <button class="play-button">▶</button>
+                        </div>
+                        <div class="rating-badge">8.4</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Avengers: Endgame</h3>
+                        <p class="movie-meta">2019 • Action, Adventure</p>
+                        <div class="flex items-center justify-between mt-2">
+                            <div class="stars">★★★★☆</div>
+                            <span class="text-sm text-gray-400">2.5K reviews</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-movie="house-of-dragon">
+                    <div class="movie-poster">
+                        <img src="hod.jpg" alt="House of the Dragon" class="movie-img">
+                        <div class="movie-overlay">
+                            <button class="play-button">▶</button>
+                        </div>
+                        <div class="rating-badge">8.6</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">House of the Dragon</h3>
+                        <p class="movie-meta">2022 • Fantasy, Drama</p>
+                        <div class="flex items-center justify-between mt-2">
+                            <div class="stars">★★★★☆</div>
+                            <span class="text-sm text-gray-400">1.8K reviews</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-movie="spider-man">
+                    <div class="movie-poster">
+                        <img src="spider man no way home.jpg" alt="Spider-Man No Way Home" class="movie-img">
+                        <div class="movie-overlay">
+                            <button class="play-button">▶</button>
+                        </div>
+                        <div class="rating-badge">8.7</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Spider-Man: No Way Home</h3>
+                        <p class="movie-meta">2021 • Action, Adventure</p>
+                        <div class="flex items-center justify-between mt-2">
+                            <div class="stars">★★★★★</div>
+                            <span class="text-sm text-gray-400">3.2K reviews</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-movie="iron-man">
+                    <div class="movie-poster">
+                        <img src="iron-man.jpg" alt="Iron Man" class="movie-img">
+                        <div class="movie-overlay">
+                            <button class="play-button">▶</button>
+                        </div>
+                        <div class="rating-badge">7.9</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Iron Man</h3>
+                        <p class="movie-meta">2008 • Action, Sci-Fi</p>
+                        <div class="flex items-center justify-between mt-2">
+                            <div class="stars">★★★★☆</div>
+                            <span class="text-sm text-gray-400">2.1K reviews</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-movie="the-100">
+                    <div class="movie-poster">
+                        <img src="the 100.jpg" alt="The 100" class="movie-img">
+                        <div class="movie-overlay">
+                            <button class="play-button">▶</button>
+                        </div>
+                        <div class="rating-badge">7.6</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">The 100</h3>
+                        <p class="movie-meta">2014 • Sci-Fi, Drama</p>
+                        <div class="flex items-center justify-between mt-2">
+                            <div class="stars">★★★★☆</div>
+                            <span class="text-sm text-gray-400">1.4K reviews</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-movie="maze-runner">
+                    <div class="movie-poster">
+                        <img src="maze runner.jpg" alt="Maze Runner" class="movie-img">
+                        <div class="movie-overlay">
+                            <button class="play-button">▶</button>
+                        </div>
+                        <div class="rating-badge">6.8</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Maze Runner</h3>
+                        <p class="movie-meta">2014 • Action, Sci-Fi</p>
+                        <div class="flex items-center justify-between mt-2">
+                            <div class="stars">★★★☆☆</div>
+                            <span class="text-sm text-gray-400">980 reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 px-6">
+        <div class="container mx-auto">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">🎬</div>
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">Movies & Series</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-number">50,000+</div>
+                    <div class="stat-label">User Reviews</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-number">100,000+</div>
+                    <div class="stat-label">Active Users</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">💬</div>
+                    <div class="stat-number">200,000+</div>
+                    <div class="stat-label">Comments</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/40 border-t border-white/10 py-12 px-6">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                            <span class="text-2xl">🎬</span>
+                        </div>
+                        <span class="text-xl font-bold">CineVerse</span>
+                    </div>
+                    <p class="text-gray-400">Your ultimate destination for movie and TV series reviews.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="movies.html" class="hover:text-purple-400 transition-colors">Movies</a></li>
+                        <li><a href="tv-series.html" class="hover:text-purple-400 transition-colors">TV Series</a></li>
+                        <li><a href="reviews.html" class="hover:text-purple-400 transition-colors">Reviews</a></li>
+                        <li><a href="about.html" class="hover:text-purple-400 transition-colors">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Categories</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">Action</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">Drama</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">Sci-Fi</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">Fantasy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-icon">📘</a>
+                        <a href="#" class="social-icon">🐦</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">▶️</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 CineVerse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
